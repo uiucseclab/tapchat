@@ -21,3 +21,6 @@ SampleData\FriendSampleData.xbf
 SignUpPage.xbf
 Tap Chat.xr.xml
 Common\ReadMe.txt
+Libs\App42_WINDOWS_SDK_1.0.dll
+Libs\APPWARP_WINRT.dll
+Libs\Newtonsoft.Json.dll

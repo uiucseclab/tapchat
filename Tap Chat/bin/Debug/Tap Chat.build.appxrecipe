@@ -19,13 +19,13 @@
     <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\Tap Chat.exe">
       <PackagePath>Tap Chat.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\App42_WINDOWS_SDK_1.0.dll">
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Libs\App42_WINDOWS_SDK_1.0.dll">
       <PackagePath>App42_WINDOWS_SDK_1.0.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\APPWARP_WINRT.dll">
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Libs\APPWARP_WINRT.dll">
       <PackagePath>APPWARP_WINRT.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Libs\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\AppBar\add.png">
@@ -80,6 +80,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Libs\App42_WINDOWS_SDK_1.0.dll">
+      <PackagePath>Libs\App42_WINDOWS_SDK_1.0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Libs\APPWARP_WINRT.dll">
+      <PackagePath>Libs\APPWARP_WINRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Libs\Newtonsoft.Json.dll">
+      <PackagePath>Libs\Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>

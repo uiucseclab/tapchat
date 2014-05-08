@@ -129,6 +129,9 @@
     <Content Include="Assets\TapChatSplash.scale-240.jpg" />
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="Common\ReadMe.txt" />
+    <Content Include="Libs\App42_WINDOWS_SDK_1.0.dll" />
+    <Content Include="Libs\APPWARP_WINRT.dll" />
+    <Content Include="Libs\Newtonsoft.Json.dll" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -166,16 +169,17 @@
   <ItemGroup>
     <Reference Include="App42_WINDOWS_SDK_1.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\App42_WINDOWS_SDK_1.0.dll</HintPath>
+      <HintPath>Libs\App42_WINDOWS_SDK_1.0.dll</HintPath>
     </Reference>
-    <Reference Include="APPWARP_WINRT">
-      <HintPath>..\..\APPWARP_WINRT.dll</HintPath>
+    <Reference Include="APPWARP_WINRT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\APPWARP_WINRT.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

@@ -1,8 +1,8 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\feraas khatib\skydrive\computers\programming\windows phone\tap chat\tap chat\obj\debug\intermediatexaml\tap chat.exe" HashGuid="81dd9ec2-4ff1-300b-561c-e141a23cb8a4" />
-    <ReferenceAssembly PathName="c:\users\feraas khatib\skydrive\computers\programming\windows phone\app42_windows_sdk_1.0.dll" HashGuid="5dedf36a-fff4-18b1-0eef-bd72081a0679" />
-    <ReferenceAssembly PathName="c:\users\feraas khatib\skydrive\computers\programming\windows phone\appwarp_winrt.dll" HashGuid="5ecb7590-2452-7326-823d-89d21395c2b5" />
-    <ReferenceAssembly PathName="c:\users\feraas khatib\skydrive\computers\programming\windows phone\newtonsoft.json.dll" HashGuid="c0bdbe7e-751e-5b53-c95e-5146b6c473bc" />
+    <LocalAssembly PathName="c:\users\feraas khatib\skydrive\computers\programming\windows phone\tap chat\tap chat\obj\debug\intermediatexaml\tap chat.exe" HashGuid="ee28aeeb-124a-1925-1c15-08cfff5be431" />
+    <ReferenceAssembly PathName="c:\users\feraas khatib\skydrive\computers\programming\windows phone\tap chat\tap chat\libs\app42_windows_sdk_1.0.dll" HashGuid="5dedf36a-fff4-18b1-0eef-bd72081a0679" />
+    <ReferenceAssembly PathName="c:\users\feraas khatib\skydrive\computers\programming\windows phone\tap chat\tap chat\libs\appwarp_winrt.dll" HashGuid="5ecb7590-2452-7326-823d-89d21395c2b5" />
+    <ReferenceAssembly PathName="c:\users\feraas khatib\skydrive\computers\programming\windows phone\tap chat\tap chat\libs\newtonsoft.json.dll" HashGuid="c0bdbe7e-751e-5b53-c95e-5146b6c473bc" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>
