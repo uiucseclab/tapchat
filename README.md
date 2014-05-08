@@ -9,6 +9,7 @@ Gustavo Frankowiak - frankow1
 **Features:**  
 
 * AES Encryption
+* NFC Functionality
 * Full user system with friend management
 * Easily add friends by tapping phones together and get a random generated 256 character encryption key for a secure chat session
 * All data is stored fully encrypted in a remote database
@@ -23,3 +24,4 @@ Gustavo Frankowiak - frankow1
 * Enable saving sessions and running in the background so that users can tap and generate a key and save that key for a long time
 * Add secure message storage so that messages are not deleted after the app is closed
 * Add SSL protection for messages not only user data
+* Increase security for sessions established without using NFC
