@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="Tap_Chat.SignUpPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tap_Chat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	<Page.Resources>
+		<x:String x:Key="signUpPageTitle">Sign Up</x:String>
+		<x:String x:Key="desiredUsernameString">Choose a Username:</x:String>
+		<x:String x:Key="enterPasswordString">Choose a Password:</x:String>
+		<x:String x:Key="enterPasswordWatermark">Password</x:String>
+		<x:String x:Key="reenterPasswordString">Re-Enter Password</x:String>
+		<x:String x:Key="reenterPasswordWatermark">Confirm Password</x:String>
+		<x:String x:Key="emailLabelString">Enter Email Address:</x:String>
+		<x:String x:Key="submitButtonLabel">Submit</x:String>
+	</Page.Resources>
+
+	<Grid x:Name="LayoutRoot">
+
+		<Grid.ChildrenTransitions>
+			<TransitionCollection>
+				<EntranceThemeTransition/>
+			</TransitionCollection>
+		</Grid.ChildrenTransitions>
+
+		<StackPanel x:Name="progressRingStack" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+			<ProgressRing x:Name="progressRing" IsActive="True"/>
+			<TextBlock x:Name="progressText" Style="{StaticResource MessageDialogTitleStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" />
+		</StackPanel>
+
+		<Grid x:Name="ActualLayout">
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+
+			<!-- TitlePanel -->
+			<StackPanel Grid.Row="0" Margin="24,17,0,28">
+				<TextBlock Text="{StaticResource AppNameString}" Style="{ThemeResource TitleTextBlockStyle}" Typography.Capitals="SmallCaps"/>
+				<TextBlock Text="{StaticResource signUpPageTitle}" Margin="0,12,0,0" Style="{ThemeResource HeaderTextBlockStyle}"/>
+			</StackPanel>
+
+			<!--TODO: Content should be placed within the following grid-->
+			<Grid Grid.Row="1" x:Name="ContentRoot" Margin="24, 0, 12, 0">
+				<ScrollViewer>
+					<StackPanel x:Name="entryGrid">
+						<TextBlock TextWrapping="Wrap" Text="{StaticResource desiredUsernameString}" FontSize="24"/>
+						<TextBlock x:Name="usernameErrors" TextWrapping="Wrap" Visibility="Collapsed" Foreground="Red" Margin="12,0,0,0" FontSize="18" />
+						<TextBox x:Name="usernameBox" PlaceholderText="Username" MaxLength="{StaticResource maxUsernameLength}"/>
+						<TextBlock TextWrapping="Wrap" Text="{StaticResource enterPasswordString}" FontSize="24"/>
+						<TextBlock x:Name="passwordErrors" TextWrapping="Wrap" Visibility="Collapsed" Foreground="Red" Margin="12,0,0,0" FontSize="18" />
+						<PasswordBox x:Name="passwordBox" PlaceholderText="{StaticResource enterPasswordWatermark}" MaxLength="{StaticResource maxPasswordLength}"/>
+						<TextBlock TextWrapping="Wrap" Text="{StaticResource reenterPasswordString}" FontSize="24"/>
+						<TextBlock x:Name="confirmPasswordErrors" TextWrapping="Wrap" Visibility="Collapsed" Foreground="Red" Margin="12,0,0,0" FontSize="18" />
+						<PasswordBox x:Name="confirmPasswordBox" PlaceholderText="{StaticResource reenterPasswordWatermark}" MaxLength="{StaticResource maxPasswordLength}"/>
+						<TextBlock TextWrapping="Wrap" Text="{StaticResource emailLabelString}" FontSize="24"/>
+						<TextBlock x:Name="emailErrors" TextWrapping="Wrap" Visibility="Collapsed" Foreground="Red" Margin="12,0,0,0" FontSize="18" />
+						<TextBox x:Name="emailBox" PlaceholderText="Your Email"/>
+					</StackPanel>
+				</ScrollViewer>
+			</Grid>
+		</Grid>
+	</Grid>
+
+	<Page.BottomAppBar>
+		<CommandBar>
+			<AppBarButton  Icon="Accept" Label="{StaticResource submitButtonLabel}" Click="signUpButton_Click"/>
+		</CommandBar>
+	</Page.BottomAppBar>
+</Page>

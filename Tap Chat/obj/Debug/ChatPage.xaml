@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="Tap_Chat.ChatPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tap_Chat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+	d:DataContext="{d:DesignData SampleData/FriendSampleData.xaml}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	
+	<Page.Resources>
+		<!--Ensure that a listview data item is stretched to the full width of the screen-->
+		<Style TargetType="ListViewItem">
+			<Setter Property='HorizontalContentAlignment' Value='Stretch'/>
+		</Style>
+	</Page.Resources>
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- TitlePanel -->
+        <StackPanel Grid.Row="0" Margin="12,17,0,12">
+            <TextBlock Text="{StaticResource AppNameString}" Style="{ThemeResource TitleTextBlockStyle}" Typography.Capitals="SmallCaps"/>
+            <TextBlock Text="{Binding currFriendsName}" Margin="0,0,0,0" Style="{StaticResource ListViewItemTextBlockStyle}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="12, 0, 12, 0">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				
+				<ListView x:Name="chatListView" ItemsSource="{Binding chatHistory}" 
+						  IsTapEnabled="False" IsRightTapEnabled="False" 
+						  IsHoldingEnabled="False" IsDoubleTapEnabled="False">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<StackPanel Background="{ThemeResource PhoneAccentBrush}" Margin="0, 6">
+								<TextBlock Text="{Binding sender}" Foreground="{ThemeResource TextBoxDisabledHeaderForegroundThemeBrush}" 
+										   Margin="6, 6, 0, 0"/>
+								<TextBlock Text="{Binding message}" Style="{StaticResource BaseTextBlockStyle}" 
+										   Margin="6, 0, 0, 6" TextWrapping="Wrap"/>
+							</StackPanel>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+				
+				<TextBox x:Name="messageTextBox" Grid.Row="1" PlaceholderText="type a message" 
+						 TextWrapping="Wrap" MaxHeight="150" MaxLength="400"/>
+			</Grid>
+
+        </Grid>
+    </Grid>
+
+	<Page.BottomAppBar>
+		<CommandBar>
+			<AppBarButton x:ConnectionId='1' x:Name="sendButtonAppBar" Icon="Send" Label="send"                                IsEnabled="{Binding sendButtonEnabled}"/>
+		</CommandBar>
+	</Page.BottomAppBar>
+</Page>
+

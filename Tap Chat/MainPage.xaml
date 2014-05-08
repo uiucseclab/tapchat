@@ -1,0 +1,171 @@
+﻿<Page
+    x:Class="Tap_Chat.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tap_Chat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 
+	Loaded="Page_Loaded">
+	<!-- d:DataContext="{d:DesignData SampleData/FriendSampleData.xaml}"-->
+
+	<Page.Resources>
+		<x:String x:Key="friendsPageTitle">friends</x:String>
+		<x:String x:Key="nfcChatButtonContent">Tap</x:String>
+		<x:String x:Key="webChatButtonContent">Web</x:String>
+		<x:String x:Key="howToStartChatHeader">Start chat using</x:String>
+
+		<!--Ensure that a listview data item is stretched to the full width of the screen-->
+		<Style TargetType="ListViewItem">
+			<Setter Property='HorizontalContentAlignment' Value='Stretch'/>
+		</Style>
+		<x:String x:Key="acceptRequestButtonContent">Accept</x:String>
+		<x:String x:Key="rejectRequestButtonContent">Reject</x:String>
+		<x:String x:Key="requestsPivotHeader">requests</x:String>
+	</Page.Resources>
+
+	<Grid x:Name="layoutRoot">
+		<Grid.ChildrenTransitions>
+			<TransitionCollection>
+				<EntranceThemeTransition/>
+			</TransitionCollection>
+		</Grid.ChildrenTransitions>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
+		<Grid Background="{ThemeResource PhoneAccentBrush}" Margin="0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+			<TextBlock Text="Logged in as: " Margin="6, 0" Style="{StaticResource TitleTextBlockStyle}"/>
+			<TextBlock x:Name="loggedInUsername" Grid.Column="1" 
+					   Text="{Binding myUsername}" Margin="6, 0" Style="{StaticResource TitleTextBlockStyle}" />
+		</Grid>
+		<Pivot Grid.Row="1" SelectionChanged="Pivot_SelectionChanged" Loaded="Pivot_Loaded" GotFocus="Pivot_GotFocus"
+			   >
+			<PivotItem x:Name="friendsListPivot" Header="{StaticResource friendsPageTitle}">
+				<Grid>
+					<Grid.ChildrenTransitions>
+						<TransitionCollection>
+							<EntranceThemeTransition/>
+						</TransitionCollection>
+					</Grid.ChildrenTransitions>
+
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="*" />
+					</Grid.RowDefinitions>
+
+					<StackPanel x:Name="progressRingStack" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed" Grid.Row="1">
+						<ProgressRing x:Name="progressRing" IsActive="True"/>
+						<TextBlock x:Name="progressText" Style="{StaticResource MessageDialogTitleStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" />
+					</StackPanel>
+
+					<TextBlock x:Name="emptyMsgBox" Grid.Row="1"  Visibility="Collapsed" TextWrapping="Wrap" Style="{StaticResource ListViewEmptyStaticTextBlockStyle}"/>
+
+					<ListView x:Name="friendsListView" Grid.Row="1"
+					  ItemsSource="{Binding friendsList}" SelectionMode="Single" SelectionChanged="friendsListView_SelectionChanged">
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<Grid x:Name="friendsListEntryGrid" Margin="0, -12, 0, 12" IsTapEnabled="{Binding isOnline}" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False">
+									<Grid.RowDefinitions>
+										<RowDefinition Height="Auto" />
+										<RowDefinition Height="Auto" />
+									</Grid.RowDefinitions>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="8*" />
+										<ColumnDefinition Width="3*" />
+									</Grid.ColumnDefinitions>
+
+									<TextBlock Text="{Binding username}" Grid.Column="0" FontSize="42.66" />
+									<TextBlock x:Name="unreadCount" Grid.Column="1" HorizontalAlignment="Left" Foreground="{ThemeResource PhoneAccentBrush}"
+											   Text="{Binding unreadCount}" FontSize="20" VerticalAlignment="Center"
+											   Visibility="{Binding unreadCountVisibility}"/>
+									<Ellipse x:Name="onlineStatusIndicator" Width="25" Height="25" Fill="{Binding onlineStatusColor}"
+												 Grid.Column="1" VerticalAlignment="Center" 
+												 HorizontalAlignment="Right"/>
+									<StackPanel Grid.Row="1" Visibility="{Binding showChatButtons}">
+										<TextBlock Text="{StaticResource howToStartChatHeader}" HorizontalAlignment="Center" Style="{StaticResource ListViewItemContentTextBlockStyle}"/>
+										<Grid>
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="*" />
+												<ColumnDefinition Width="*" />
+											</Grid.ColumnDefinitions>
+											<Button x:Name="nfcChatButton" Grid.Column="0" Content="{StaticResource nfcChatButtonContent}" Click="nfcChatButton_Click" />
+											<Button x:Name="webChatButton" Grid.Column="1" Content="{StaticResource webChatButtonContent}" Click="webChatButton_Click"/>
+										</Grid>
+									</StackPanel>
+								</Grid>
+							</DataTemplate>
+						</ListView.ItemTemplate>
+
+					</ListView>
+
+				</Grid>
+			</PivotItem>
+
+			<PivotItem x:Name="friendRequestsPivot" Header="{StaticResource requestsPivotHeader}">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="*" />
+					</Grid.RowDefinitions>
+
+					<TextBlock x:Name="noRequestsMsgBox" Grid.Row="1"  Visibility="Collapsed" TextWrapping="Wrap" Style="{StaticResource ListViewEmptyStaticTextBlockStyle}"/>
+
+					<ListView x:Name="requestsListView" Grid.Row="1"
+					  ItemsSource="{Binding friendRequests}" SelectionMode="Single" SelectionChanged="requestsListView_SelectionChanged">
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<Grid x:Name="requestsListEntryGrid" Margin="0, -12, 0, 24" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False">
+									<Grid.RowDefinitions>
+										<RowDefinition Height="Auto" />
+										<RowDefinition Height="Auto" />
+									</Grid.RowDefinitions>
+
+									<TextBlock Text="{Binding username}" Grid.Column="0" FontSize="42.66" />
+									<Grid Grid.Row="1" Visibility="{Binding showRequestButtons}" >
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition />
+											<ColumnDefinition />
+										</Grid.ColumnDefinitions>
+										<Button x:Name="acceptRequestButton" Grid.Column="0" 
+													Margin="0, 0, 6, 0" HorizontalAlignment="Stretch" 
+													Content="{StaticResource acceptRequestButtonContent}" 
+													Background="DarkGreen" Click="acceptRequestButton_Click"
+													/>
+										<Button x:Name="rejectRequestButton" Grid.Column="1" 
+													Margin="6, 0, 0, 0" HorizontalAlignment="Stretch" 
+													Content="{StaticResource rejectRequestButtonContent}"
+													Background="DarkRed" Click="rejectRequestButton_Click"
+													/>
+									</Grid>
+								</Grid>
+							</DataTemplate>
+						</ListView.ItemTemplate>
+
+					</ListView>
+
+				</Grid>
+			</PivotItem>
+		</Pivot>
+	</Grid>
+
+
+	<Page.BottomAppBar>
+		<CommandBar>
+			<AppBarButton x:Name="addFriendAppBar" Icon="AddFriend" Label="add friend" Click="addFriendAppBar_Click" />
+			<AppBarButton x:Name="editFriendsAppBar" Icon="Edit" Label="edit list" Click="editFriendsAppBar_Click" />
+			<!-- Refresh button in case there are some weird issues this can be used to manually run things
+					and debug them -->
+			<AppBarButton x:Name="refreshAppBar" Icon="Refresh" Label="refresh" Click="refreshAppBar_Click" />
+			<AppBarButton x:Name="deleteFriendsAppBar" Icon="Delete" Label="delete" Visibility="Collapsed" Click="deleteFriendsAppBar_Click" />
+			<AppBarButton x:Name="cancelEditAppBar" Icon="Cancel" Label="cancel" Visibility="Collapsed" Click="cancelEditAppBar_Click" />
+		</CommandBar>
+	</Page.BottomAppBar>
+</Page>

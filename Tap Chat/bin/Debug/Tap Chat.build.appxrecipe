@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>FERAAS-MSI-LAP</Machine>
+    <WindowsUser>Feraas Khatib</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>997c7d9a-ea3b-4727-8af3-a10d9e0e303d</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\Tap Chat.exe">
+      <PackagePath>Tap Chat.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\App42_WINDOWS_SDK_1.0.dll">
+      <PackagePath>App42_WINDOWS_SDK_1.0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\APPWARP_WINRT.dll">
+      <PackagePath>APPWARP_WINRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\AppBar\add.png">
+      <PackagePath>Assets\AppBar\add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\AppBar\cancel.png">
+      <PackagePath>Assets\AppBar\cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\AppBar\check.png">
+      <PackagePath>Assets\AppBar\check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\AppBar\delete.png">
+      <PackagePath>Assets\AppBar\delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\AppBar\select.png">
+      <PackagePath>Assets\AppBar\select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\TapChatSplash.scale-100.jpg">
+      <PackagePath>Assets\TapChatSplash.scale-100.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\TapChatSplash.scale-140.jpg">
+      <PackagePath>Assets\TapChatSplash.scale-140.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Assets\TapChatSplash.scale-240.jpg">
+      <PackagePath>Assets\TapChatSplash.scale-240.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\AddFriendPage.xbf">
+      <PackagePath>AddFriendPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\ChatPage.xbf">
+      <PackagePath>ChatPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\LoginPage.xbf">
+      <PackagePath>LoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\SampleData\FriendSampleData.xbf">
+      <PackagePath>SampleData\FriendSampleData.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\SignUpPage.xbf">
+      <PackagePath>SignUpPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\Tap Chat.xr.xml">
+      <PackagePath>Tap Chat.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

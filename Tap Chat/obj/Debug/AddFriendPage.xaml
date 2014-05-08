@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="Tap_Chat.AddFriendPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tap_Chat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	<Page.Resources>
+		<x:String x:Key="addFriendPageTitle">add a friend</x:String>
+		<x:String x:Key="enterFriendNameLabel">Friend's Username:</x:String>
+		<x:String x:Key="addFriendButtonContent">Send Friend Request</x:String>
+	</Page.Resources>
+
+	<Grid x:Name="LayoutRoot">
+
+		<Grid.ChildrenTransitions>
+			<TransitionCollection>
+				<EntranceThemeTransition/>
+			</TransitionCollection>
+		</Grid.ChildrenTransitions>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<!-- TitlePanel -->
+		<StackPanel Grid.Row="0" Margin="24,20,0,28">
+			<TextBlock Text="{StaticResource AppNameString}" Style="{ThemeResource TitleTextBlockStyle}" Typography.Capitals="SmallCaps"/>
+			<TextBlock Text="{StaticResource addFriendPageTitle}" Margin="0,12,0,0" Style="{ThemeResource HeaderTextBlockStyle}"/>
+		</StackPanel>
+
+		<!--TODO: Content should be placed within the following grid-->
+		<Grid Grid.Row="1" x:Name="ContentRoot" Margin="24, 0, 12, 0">
+			<StackPanel x:Name="progressRingStack" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+				<ProgressRing x:Name="progressRing" IsActive="True"/>
+				<TextBlock x:Name="progressText" Style="{StaticResource MessageDialogTitleStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" />
+			</StackPanel>
+			
+			<StackPanel x:Name="entryGrid" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False">
+				<TextBlock TextWrapping="Wrap" Text="{StaticResource enterFriendNameLabel}" FontSize="24"/>
+				<TextBox x:Name="friendUsernameBox" PlaceholderText="Username" MaxLength="{StaticResource maxUsernameLength}"/>
+				<TextBlock x:Name="friendUsernameErrors" TextWrapping="Wrap" Visibility="Collapsed" Foreground="Red" Margin="12,0,0,0" FontSize="18" />
+				<Button x:ConnectionId='1' x:Name="addFriendButton" 
+						HorizontalAlignment="Stretch"
+						Content="{StaticResource addFriendButtonContent}"                               />
+			</StackPanel>
+		</Grid>
+	</Grid>
+</Page>
+

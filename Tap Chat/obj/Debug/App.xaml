@@ -1,0 +1,14 @@
+﻿<Application
+    x:Class="Tap_Chat.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tap_Chat"
+    RequestedTheme="Dark">
+	<Application.Resources>
+		<x:String x:Key="AppNameString">Tap Chat</x:String>
+		<x:Int32 x:Key="maxUsernameLength">25</x:Int32>
+		<x:Int32 x:Key="maxPasswordLength">100</x:Int32>
+	</Application.Resources>
+
+</Application>
+

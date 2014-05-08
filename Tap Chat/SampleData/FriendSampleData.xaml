@@ -1,0 +1,47 @@
+﻿<vm:FriendsViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:Tap_Chat.ViewModel"
+	currFriendsName="friendsUsername"
+	myUsername="myUsername">
+	
+	<!--
+	<vm:FriendsViewModel.friendsList>
+		<vm:FriendsListEntry username="user1" isOnline="True" onlineStatusColor="Green" showChatButtons="Visible" unreadCount="10000" />
+		<vm:FriendsListEntry username="user2" isOnline="False" onlineStatusColor="Red" />
+		<vm:FriendsListEntry username="user3" isOnline="True" onlineStatusColor="Green" />
+		<vm:FriendsListEntry username="user4" isOnline="False" onlineStatusColor="Red" />
+		<vm:FriendsListEntry username="user5" isOnline="True" onlineStatusColor="Green" />
+		<vm:FriendsListEntry username="user6" isOnline="False" onlineStatusColor="Red" />
+		<vm:FriendsListEntry username="user7" isOnline="True" onlineStatusColor="Green" />
+		<vm:FriendsListEntry username="user8" isOnline="False" onlineStatusColor="Red" />
+		<vm:FriendsListEntry username="user9" isOnline="True" onlineStatusColor="Green" />
+		<vm:FriendsListEntry username="user10" isOnline="False" onlineStatusColor="Red" />
+	</vm:FriendsViewModel.friendsList>
+	
+	<vm:FriendsViewModel.friendRequests>
+		<vm:FriendRequest username="friendRequest1" showRequestButtons="Visible" />
+		<vm:FriendRequest username="friendRequest2" showRequestButtons="Collapsed" />
+		<vm:FriendRequest username="friendRequest3" showRequestButtons="Collapsed" />
+		<vm:FriendRequest username="friendRequest4" showRequestButtons="Collapsed" />
+		<vm:FriendRequest username="friendRequest5" showRequestButtons="Collapsed" />
+		<vm:FriendRequest username="friendRequest6" showRequestButtons="Collapsed" />
+		<vm:FriendRequest username="friendRequest7" showRequestButtons="Collapsed" />
+		<vm:FriendRequest username="friendRequest8" showRequestButtons="Collapsed" />
+		<vm:FriendRequest username="friendRequest9" showRequestButtons="Collapsed" />
+		<vm:FriendRequest username="friendRequest10" showRequestButtons="Collapsed" />
+	</vm:FriendsViewModel.friendRequests>
+	-->
+
+	<vm:FriendsViewModel.chatHistory>
+		<vm:ChatEntry sender="myUsername" message="Hey whats up?" />
+		<vm:ChatEntry sender="friendsUsername" message="Not much. Hbu?" />
+		<vm:ChatEntry sender="myUsername" message="The usual" />
+		<vm:ChatEntry sender="friendsUsername" message="Cool" />
+		<vm:ChatEntry sender="myUsername" message="You like this app ugagahgoiepa geawpgueiapgu puewiapgewiapguiewpaguiewpg" />
+		<vm:ChatEntry sender="friendsUsername" message="Not particularly" />
+		<vm:ChatEntry sender="myUsername" message="You underestimate the powers of the dark side of the force" />
+		<vm:ChatEntry sender="friendsUsername" message="NO YOU WILL DIE!!" />
+	</vm:FriendsViewModel.chatHistory>
+
+</vm:FriendsViewModel>

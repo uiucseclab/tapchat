@@ -1,0 +1,67 @@
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\App.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\LoginPage.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\Tap Chat.xr.xml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\Tap Chat.exe
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\Tap Chat.pdb
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\resources.pri
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\AppxManifest.xml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\Tap Chat.build.appxrecipe
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\Tap Chat.csprojResolveAssemblyReference.cache
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\App.g.i.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\App.g.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\LoginPage.g.i.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\LoginPage.g.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\App.xaml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\LoginPage.xaml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\App.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\LoginPage.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\Tap Chat.exe
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\Tap Chat.pdb
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\Tap Chat.csproj.GenerateResource.Cache
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\priconfig.xml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\priconfig.xml.intermediate
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\layout.resfiles
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\layout.resfiles.intermediate
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\resources.resfiles
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\resources.resfiles.intermediate
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\pri.resfiles
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\pri.resfiles.intermediate
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\qualifiers.txt
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\ProjectArchitectures.txt
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\App42_WINDOWS_SDK_1.0.dll
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\MainPage.g.i.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\MainPage.g.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SampleData\FriendSampleData.g.i.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SampleData\FriendSampleData.g.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SampleData\FriendSampleData.xaml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\MainPage.xaml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\MainPage.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\MainPage.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\SampleData\FriendSampleData.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\SignUpPage.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SignUpPage.g.i.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SignUpPage.g.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SignUpPage.xaml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SignUpPage.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\AppWarp_WP7_SDK.dll
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\AddFriendPage.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\AddFriendPage.g.i.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\AddFriendPage.g.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\AddFriendPage.xaml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\AddFriendPage.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SampleData\FriendSampleData.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\ChatPage.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\bin\Debug\SampleData\ChatSampleData.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\ChatPage.g.i.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\ChatPage.g.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SampleData\ChatSampleData.g.i.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SampleData\ChatSampleData.g.cs
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\ChatPage.xaml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SampleData\ChatSampleData.xaml
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\ChatPage.xbf
+C:\Users\Feraas Khatib\SkyDrive\Computers\Programming\Windows Phone\Tap Chat\Tap Chat\obj\Debug\SampleData\ChatSampleData.xbf

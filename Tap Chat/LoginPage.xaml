@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="Tap_Chat.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tap_Chat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	<Page.Resources>
+		<x:String x:Key="loginPageTitle">Login or Signup</x:String>
+		<x:String x:Key="usernamePlaceholderString">Enter your username</x:String>
+		<x:String x:Key="usernameLableString">Username:</x:String>
+		<x:String x:Key="passwordLabelString">Password:</x:String>
+		<x:String x:Key="passwordPlaceholderString">Enter your password</x:String>
+		<x:String x:Key="loginButtonString">Login</x:String>
+		<x:String x:Key="registerButtonString">Sign Up</x:String>
+
+		<Storyboard x:Name="fadeIn">
+			<DoubleAnimation
+				Duration="0:0:1" From="0.0" To="1.0"
+				Storyboard.TargetName="entryGrid"
+				Storyboard.TargetProperty="Opacity"/>
+		</Storyboard>
+	</Page.Resources>
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.ChildrenTransitions>
+			<TransitionCollection>
+				<EntranceThemeTransition/>
+			</TransitionCollection>
+		</Grid.ChildrenTransitions>
+
+		<StackPanel x:Name="progressRingStack" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+			<ProgressRing x:Name="progressRing" IsActive="True"/>
+			<TextBlock x:Name="progressText" Style="{StaticResource MessageDialogTitleStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" />
+		</StackPanel>
+		
+		<Grid x:Name="ActualLayout">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+
+			<!-- TitlePanel -->
+			<StackPanel Grid.Row="0" Margin="12,18,0,24">
+				<TextBlock Text="{StaticResource AppNameString}" Style="{ThemeResource TitleTextBlockStyle}" Typography.Capitals="SmallCaps"/>
+				<TextBlock Text="{StaticResource loginPageTitle}" Margin="0,12,0,0" Style="{ThemeResource HeaderTextBlockStyle}"/>
+			</StackPanel>
+
+			<!--TODO: Content should be placed within the following grid-->
+			<Grid Grid.Row="1" x:Name="ContentRoot" Canvas.ZIndex="1" Opacity="1">
+				<Grid Margin="12">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="7*" />
+						<RowDefinition Height="1*" />
+					</Grid.RowDefinitions>
+
+						<StackPanel Grid.Row="0">
+							<TextBlock TextWrapping="Wrap" Text="{StaticResource usernameLableString}" Style="{StaticResource SubheaderTextBlockStyle}" />
+							<TextBox x:Name="usernameTextBox" TextWrapping="Wrap" PlaceholderText="{StaticResource usernamePlaceholderString}" Margin="0, 12, 0, 24" MaxLength="{StaticResource maxUsernameLength}" LostFocus="usernameTextBox_LostFocus"/>
+							<TextBlock TextWrapping="Wrap" Text="{StaticResource passwordLabelString}" Style="{StaticResource SubheaderTextBlockStyle}"/>
+							<PasswordBox x:Name="passwordBox" PlaceholderText="{StaticResource passwordPlaceholderString}" Margin="0, 12, 0, 24"/>
+							<Button x:Name="loginButton" Content="{StaticResource loginButtonString}" HorizontalAlignment="Stretch" Click="loginButton_Click"/>
+						</StackPanel>
+					<Button x:Name="signUpButton" Grid.Row="1" Content="{StaticResource registerButtonString}" HorizontalAlignment="Stretch" Click="signUpButton_Click"/>
+				</Grid>
+			</Grid>
+		</Grid>
+	</Grid>
+</Page>
